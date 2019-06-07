@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+    <br><br>
     <form>
       <div class="row">
         <div class="col-md-12">
@@ -35,7 +36,7 @@
           </div>
         </div>
       </div><br><br><br>
-      <div class="row">
+      <div class="row_q">
         <div class="col-md-12">
           <label for="why"> Why, rly, why do you want to learn programming? It's time consuming and kind of hard. Not to mention, expensive...</label>
           <select class="form-control" id="why">
@@ -49,7 +50,7 @@
           </select>
         </div>
       </div><br>
-      <div class="row">
+      <div class="row_q">
         <div class="col-md-12">
           <label for="idea"> Do you dream of writing the next great American app? Are you nursing a brilliant idea?</label>
           <select class="form-control" id="idea">
@@ -59,7 +60,7 @@
           </select>
         </div>
       </div><br>
-      <div class="row">
+      <div class="row_q">
         <div class="col-md-12">
           <label for="platform"> In what field do you see yourself happy?</label>
           <select class="form-control" id="platform">
@@ -71,7 +72,7 @@
           </select>
         </div>
       </div><br><br>
-      <div class="row">
+      <div class="row_q">
         <div class="col-md-12">
           <label for="drive">Deep dive or shallow snorkle?</label>
           <select class="form-control" id="drive">
@@ -81,7 +82,7 @@
           </select>
         </div>
       </div><br>
-      <div class="row">
+      <div class="row_q">
         <div class="col-md-12">
           <label for="big"> So,you want to work for the big guys?</label>
           <select class="form-control" id="big">
@@ -91,6 +92,7 @@
           </select>
         </div>
       </div>
+      <br><br><br>
       <div id="submit">
         <input type="submit" class="submit-button">
       </div>
@@ -99,20 +101,24 @@
 </form>
 </div>
 </div>
+<br><br><br>
 
 <!-- the story goes here -->
-
-<div id="story">
-  <h1>We know what you should study!</h1>
-  <p>Yes,<span class="name"></span>! It is obvious, that you should study. Look for more information in your mailbox at <span class="email"></span> within a few days.
-  </p>
+<div class="story-box">
+  <div class="row text-center">
+    <div class="col-md-12">
+      <h1>We know what you should study!</h1>
+      <p>Yes,<span class="name"></span>! It is obvious, that you should study. Look for more information in your mailbox at <span class="email"></span> within a few days.
+      </p>
+    </div>
+  </div>
 </div>
-
+<br><br><br>
 <!--suggestions  -->
-<div class="row languages" id="languages">
+<div class="row languages">
   <div class="col-md-6">
-    <div class="card ruby" style="width: 18rem;">
-      <img class="card-img-top" src="img/ruby.png" alt="Card image cap">
+    <div class="card mb-3 ruby" style="width: 18rem;">
+      <img class="card-img-top ruby" src="img/ruby.png" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Ruby</h4>
         <p class="card-text">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
@@ -120,9 +126,9 @@
       </div>
     </div>
   </div>
-
+<br><br>
   <div class="col-md-6">
-    <div class="card js" style="width: 18rem;">
+    <div class="card mb-3 js" style="width: 18rem;">
       <img class="card-img-top" src="img/js.png" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">JavaScript</h4>
@@ -131,9 +137,9 @@
       </div>
     </div>
   </div>
-
+<br><br>
   <div class="col-md-6">
-    <div class="card js" style="width: 18rem;">
+    <div class="card mb-3 python" style="width: 18rem;">
       <img class="card-img-top" src="img/python.jpg" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">Python</h4>
@@ -142,9 +148,9 @@
       </div>
     </div>
   </div>
-
+<br><br>
   <div class="col-md-6">
-    <div class="card js" style="width: 18rem;">
+    <div class="card mb-3 csharp" style="width: 18rem;">
       <img class="card-img-top" src="img/csharp.png" alt="Card image cap">
       <div class="card-body">
         <h4 class="card-title">C#</h4>
@@ -153,7 +159,7 @@
       </div>
     </div>
   </div>
-
+<br><br>
 </div>
 </div>
 </body>

@@ -1,3 +1,46 @@
-img {
-  width: 100px;
+img.card-img-top {
+  max-height: 260px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.card {
+  min-height: 100%;
+  background-color: #1c1414;
+  color: #ccae8b;
+  margin: 20px;
+  padding: 20px;
+}
+
+.col-md-6 {
+  padding: 50px;
+}
+
+img.card-img-top.ruby {
+  padding-right:50px;
+  margin: 30px;
+}
+
+.topbox {
+  background-color: #d0873a;
+  padding: 20px;
+}
+
+body{
+  background-color: #988074;
+  align-items: center;
+}
+
+#name_blanks {
+  font-size: 20px;
+  font-family: monospace;
+  color: #1c1414;
+}
+
+.row_q {
+  font-size: 20px;
+  font-family: monospace;
+  color: #77161e;
 }
