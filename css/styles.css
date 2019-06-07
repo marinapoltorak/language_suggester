@@ -51,4 +51,9 @@ body{
   padding: 50px;
   border-radius: 75%;
   color: #1c1414;
+  display:none;
+}
+
+#response {
+  display:none;
 }

@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-
   <script src="js/jquery-3.4.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Language Suggester</title>
@@ -20,149 +19,159 @@
         </div>
       </div>
     </div>
+  </div>
     <br><br>
-    <form>
-      <div class="row">
-        <div class="col-md-12">
-          <div id="name_blanks" class="initial">
-            <div class="form-group">
-              <label for="name">What is your name?</label>
-              <input id="name" class="form-control" type="text">
+    <div class="container" id="initial">
+        <form>
+          <div class="row_q">
+            <div class="col-md-12">
+              <div id="name_blanks">
+                <div class="form-group">
+                  <label for="name">What is your name?</label>
+                  <input id="name" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="email">Your e-mail address:</label>
+                  <input id="email" class="form-control" type="text">
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="email">Your e-mail address:</label>
-              <input id="email" class="form-control" type="text">
+          </div><br><br><br>
+          <div class="row_q">
+            <div class="col-md-12">
+              <label for="why"> Why, rly, why do you want to learn programming? It's time consuming and kind of hard. Not to mention, expensive...</label>
+              <select class="form-control" id="why">
+                <option>IDK. because?</option>
+                <option>For the pure joy of it.</option>
+                <option>Sounds super cool!</option>
+                <option>Live and learn! reach for the stars!</option>
+                <option>For the next gen. I live to give.</option>
+                <option>Get a job!</option>
+                <option>$$$$$$$$</option>
+              </select>
+            </div>
+          </div><br>
+          <div class="row_q">
+            <div class="col-md-12">
+              <label for="idea"> Do you dream of writing the next great American app? Are you nursing a brilliant idea?</label>
+              <select class="form-control" id="idea">
+                <option>Yes, indeed I do!</option>
+                <option>Nope!</option>
+                <option>To be honest, I live to design.</option>
+              </select>
+            </div>
+          </div><br>
+          <div class="row_q">
+            <div class="col-md-12">
+              <label for="platform"> In what field do you see yourself happy?</label>
+              <select class="form-control" id="platform">
+                <option>The Web. What else is there?</option>
+                <option>Mobile!</option>
+                <option>I didn't pick big business, big business picked me...</option>
+                <option>It's all about the game.</option>
+                <option>$$$$$$$$</option>
+              </select>
+            </div>
+          </div><br><br>
+          <div class="row_q">
+            <div class="col-md-12">
+              <label for="drive">Deep dive or shallow snorkle?</label>
+              <select class="form-control" id="drive">
+                <option>The deepest. In order to bake an apple pie, one must first invent the universe.</option>
+                <option>Deep. Sort of really deep. </option>
+                <option>Let's make it quick, and I will pick up other skills when I need them.</option>
+              </select>
+            </div>
+          </div><br>
+          <div class="row_q">
+            <div class="col-md-12">
+              <label for="big"> So,you want to work for the big guys?</label>
+              <select class="form-control" id="big">
+                <option>Pass the Mocrosoft, get me into the back-end. I'm ready to get paid.</option>
+                <option>Yes, big, but only tech. I'm too good for the consumer field.</option>
+                <option>I am all about that front end interaction. </option>
+              </select>
+            </div>
+          </div>
+          <br><br><br>
+          <button class="btn btn-warning" type="submit" name="button" id="submit">What Should I study?</button>
+        </form>
+      </div>
+    <br><br><br>
+
+<!-- the story goes here -->
+<div class="container" id="response">
+    <div class="well">
+      <div class="story-box">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1>We know what you should study!</h1>
+            <p>Yes,<span class="name"></span>! It is obvious what programming language suits you best. Here it is, below. Click on the link and travel to the web site that will give you all the information you need. Look for more in your email box at <span class="email"></span> within a few days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+<!--suggestions  -->
+      <div class="Ruby">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-3 ruby" style="width: 18rem;">
+              <img class="card-img-top ruby" src="img/ruby.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Ruby</h4>
+                  <p class="card-text">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
+                  <a href="https://www.ruby-lang.org/en/" class="btn btn-outline-secondary">Learn More About Ruby</a>
+                </div>
             </div>
           </div>
         </div>
-      </div><br><br><br>
-      <div class="row_q">
-        <div class="col-md-12">
-          <label for="why"> Why, rly, why do you want to learn programming? It's time consuming and kind of hard. Not to mention, expensive...</label>
-          <select class="form-control" id="why">
-            <option>IDK. 'cause?</option>
-            <option>or the pure joy of it.</option>
-            <option>sounds super cool!</option>
-            <option>live and learn! reach for the stars!</option>
-            <option>for the next gen. I live to give.</option>
-            <option>get a job!</option>
-            <option>moneymoneymoney moooooney!</option>
-          </select>
-        </div>
-      </div><br>
-      <div class="row_q">
-        <div class="col-md-12">
-          <label for="idea"> Do you dream of writing the next great American app? Are you nursing a brilliant idea?</label>
-          <select class="form-control" id="idea">
-            <option>Yes, indeed I do!</option>
-            <option>Nope!</option>
-            <option>To be honest, I live to design.</option>
-          </select>
-        </div>
-      </div><br>
-      <div class="row_q">
-        <div class="col-md-12">
-          <label for="platform"> In what field do you see yourself happy?</label>
-          <select class="form-control" id="platform">
-            <option>The Web. What else is there?</option>
-            <option>Mobile!</option>
-            <option>I didn't pick big business, big business picked me...</option>
-            <option>it's all about the game.</option>
-            <option>$$$$$$$$</option>
-          </select>
+      </div><br><br>
+      <div class="JavaScript">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card mb-3 js" style="width: 18rem;">
+              <img class="card-img-top" src="img/js.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">JavaScript</h4>
+                <p class="card-text">JavaScript.com is a resource built by the Pluralsight team for the JavaScript community.Because JavaScript is a great language for coding beginners, we've gathered some of the best learning resources around and built a JavaScript course to help new developers get up and running.</p>
+                <a href="https://www.javascript.com/about" class="btn btn-outline-secondary">Learn More About JavaScript</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div><br><br>
-      <div class="row_q">
-        <div class="col-md-12">
-          <label for="drive">Deep dive or shallow snorkle?</label>
-          <select class="form-control" id="drive">
-            <option>The deepest. In order to bake an apple pie, one must first invent the universe.</option>
-            <option>Deep. Sort of really deep. </option>
-            <option>Let's make it quick, and I will pick up other skills when I need them.</option>
-          </select>
-        </div>
-      </div><br>
-      <div class="row_q">
-        <div class="col-md-12">
-          <label for="big"> So,you want to work for the big guys?</label>
-          <select class="form-control" id="big">
-            <option>Pass the Mocrosoft,get me into the back-end. I'm ready to get paid.</option>
-            <option>Yes, big, but only tech. I'm too good for the consumer field.</option>
-            <option>I'm all about that front-end interaction. </option>
-          </select>
+      <div class="Python">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 python" style="width: 18rem;">
+              <img class="card-img-top" src="img/python.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Python</h4>
+                <p class="card-text">JavaScript.com is a resource built by the Pluralsight team for the JavaScript community.Because JavaScript is a great language for coding beginners, we've gathered some of the best learning resources around and built a JavaScript course to help new developers get up and running.</p>
+                <a href="https://www.python.org/" class="btn btn-outline-secondary">Learn More About C#</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <br><br><br>
-      <div id="submit">
-        <input type="submit" class="btn btn-warning btn-lg">
+      <br><br>
+      <div class="csharp">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 csharp" style="width: 18rem;">
+              <img class="card-img-top" src="img/csharp.png" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">C#</h4>
+                <p class="card-text">C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</p>
+                <a href="https://dotnet.microsoft.com/languages" class="btn btn-outline-secondary">Learn More About Python</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</form>
-</div>
-</div>
-<br><br><br>
-
-<!-- the story goes here -->
-<div class="well">
-  <div class="story-box">
-    <div class="row text-center">
-      <div class="col-md-12">
-        <h1>We know what you should study!</h1>
-        <p>Yes,<span class="name"></span>! It is obvious, that you should study. Look for more information in your mailbox at <span class="email"></span> within a few days.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<br><br><br>
-<!--suggestions  -->
-<div class="row languages">
-  <div class="col-md-6">
-    <div class="card mb-3 ruby" style="width: 18rem;">
-      <img class="card-img-top ruby" src="img/ruby.png" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Ruby</h4>
-        <p class="card-text">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
-        <a href="https://www.ruby-lang.org/en/" class="btn btn-outline-secondary">Learn More About Ruby</a>
-      </div>
-    </div>
-  </div>
-<br><br>
-  <div class="col-md-6">
-    <div class="card mb-3 js" style="width: 18rem;">
-      <img class="card-img-top" src="img/js.png" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">JavaScript</h4>
-        <p class="card-text">JavaScript.com is a resource built by the Pluralsight team for the JavaScript community.Because JavaScript is a great language for coding beginners, we've gathered some of the best learning resources around and built a JavaScript course to help new developers get up and running.</p>
-        <a href="https://www.javascript.com/about" class="btn btn-outline-secondary">Learn More About JavaScript</a>
-      </div>
-    </div>
-  </div>
-<br><br>
-  <div class="col-md-6">
-    <div class="card mb-3 python" style="width: 18rem;">
-      <img class="card-img-top" src="img/python.jpg" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">Python</h4>
-        <p class="card-text">JavaScript.com is a resource built by the Pluralsight team for the JavaScript community.Because JavaScript is a great language for coding beginners, we've gathered some of the best learning resources around and built a JavaScript course to help new developers get up and running.</p>
-        <a href="https://www.python.org/" class="btn btn-outline-secondary">Learn More About Python</a>
-      </div>
-    </div>
-  </div>
-<br><br>
-  <div class="col-md-6">
-    <div class="card mb-3 csharp" style="width: 18rem;">
-      <img class="card-img-top" src="img/csharp.png" alt="Card image cap">
-      <div class="card-body">
-        <h4 class="card-title">C#</h4>
-        <p class="card-text">C# (pronounced C sharp) is a general-purpose, multi-paradigm programming language encompassing strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</p>
-        <a href="https://dotnet.microsoft.com/languages" class="btn btn-outline-secondary">Learn More About Python</a>
-      </div>
-    </div>
-  </div>
-<br><br>
-</div>
-</div>
 </body>
 </html>
