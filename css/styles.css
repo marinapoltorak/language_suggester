@@ -31,7 +31,7 @@ img.card-img-top.ruby {
 body{
   background-color: #988074;
   align-items: center;
-  padding: 50px;
+  padding: 5px;
 }
 
 #name_blanks {
@@ -46,10 +46,10 @@ body{
   color: #77161e;
 }
 
-.well {
+.jumbotron {
   background-color: #d0873a;
-  padding: 50px;
-  border-radius: 75%;
+  padding: 20px;
+  padding: 20px;
   color: #1c1414;
   display:none;
 }

@@ -10,45 +10,47 @@ $(document).ready(function () {
     var big = $('#big').val();
     $('#initial').show();
     $('.response').hide();
-    $('.well').hide();
+    $('.jumbotron').hide();
 
-    if ((why === 'IDK. because?' || why === 'For the pure joy of it.' || why === 'Sounds super cool!' && why != 'live and learn! reach for the stars!' && why != 'For the next gen. I live to give.') && (idea === 'Nope!' || idea === 'To be honest, I live to design.') && (platform === 'The Web. What else is there?' || platform === 'Mobile!') && (drive === 'Lets make it quick, and I will pick up other skills when I need them.') && (big === 'I am all about that front-end interaction.')) {
+    if ((why === 'Sounds super cool!'
+    && why != '$$$$$$$$' && why != 'For the next gen. I live to give.')
+    && (idea === 'Nope!' || idea === 'To be honest, I live to design.')
+    && (platform === 'The Web. What else is there?' || platform === 'Mobile!')
+    && (drive === 'Lets make it quick, and I will pick up other skills when I need them.')
+    && (big === 'I am all about that front-end interaction.')) {
       $('.response').show();
       $('.Ruby').hide();
       $('.JavaScript').hide();
       $('.csharp').hide();
-      $('.well').show();
-
-    } else if ((why === 'Get a job!' || why === '$$$$$$$$') && (idea === 'Yes, indeed I do!') && (drive === 'The deepest. In order to bake an apple pie, one must first invent the universe.' || drive === 'Deep. Sort of really deep.') && (big !== 'I am all about that front end interaction')) {
+      $('.jumbotron').show();
+    } else if ((why === '$$$$$$$$')
+    && (idea === 'Yes, indeed I do!')
+    && (drive === 'The deepest. In order to bake an apple pie, one must first invent the universe.')
+    && (big !== 'I am all about that front end interaction')) {
       $('.response').show();
       $('.Ruby').hide();
       $('.JavaScript').hide();
       $('.Python').hide();
-      $('.well').show();
-    } else if (idea === 'To be honest, I live to design. Color, shape, presentation! Others can do the rest.') {
+      $('.jumbotron').show();
+    } else if (idea === 'To be honest, I live to design.') {
       $('.response').show();
       $('.Ruby').hide();
       $('.Python').hide();
       $('.csharp').hide();
-      $('.well').show();
+      $('.jumbotron').show();
     } else {
       $('#response').show();
       $('.Python').hide();
       $('.csharp').hide();
       $('.JavaScript').hide();
-      $('.well').show();
+      $('.jumbotron').show();
     }
 
     $('.name').text(nameInput);
     $('.email').text(emailInput);
-    $('.why').text(why);
-    $('.idea').text(idea);
-    $('.platform').text(platform);
-    $('.drive').text(drive);
-    $('.big').text(big);
-
     $('#languages').fadeIn(duration = 1000);
     $('#initial').slideUp(duration = 1000);
+    $('.topbox').slideUp(duration = 1000);
 
   });
 });
