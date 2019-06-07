@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Language Suggester</title>
+</head>
+<body>
+  <div class="container">
+    <div class="topbox">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1>Programming Language Suggester</h1>
+          <h2>Answer a few questions</h2>
+          <h3>and I will tell you what language is right for you.</h3>
+        </div>
+      </div>
+    </div>
+    <form>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="name_blanks" class="initial">
+            <div class="form-group">
+              <label for="name">What is your name?</label>
+              <input id="name" class="form-control" type="text">
+            </div>
+            <div class="form-group">
+              <label for="email">Your e-mail address:</label>
+              <input id="email" class="form-control" type="text">
+            </div>
+          </div>
+        </div>
+      </div><br><br><br>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="why"> Why, rly, why do you want to learn programming? It's time consuming and kind of hard. Not to mention, expensive...</label>
+          <select class="form-control" id="why">
+            <option>IDK. 'cause?</option>
+            <option>or the pure joy of it.</option>
+            <option>sounds super cool!</option>
+            <option>live and learn! reach for the stars!</option>
+            <option>for the next gen. I live to give.</option>
+            <option>get a job!</option>
+            <option>moneymoneymoney moooooney!</option>
+          </select>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="idea"> Do you dream of writing the next great American app? Are you nursing a brilliant idea?</label>
+          <select class="form-control" id="idea">
+            <option>Yes, indeed I do!</option>
+            <option>Nope!</option>
+            <option>To be honest, I live to design.</option>
+          </select>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="platform"> In what field do you see yourself happy?</label>
+          <select class="form-control" id="platform">
+            <option>The Web. What else is there?</option>
+            <option>Mobile!</option>
+            <option>I didn't pick big business, big business picked me...</option>
+            <option>it's all about the game.</option>
+            <option>$$$$$$$$</option>
+          </select>
+        </div>
+      </div><br><br>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="drive">Deep dive or shallow snorkle?</label>
+          <select class="form-control" id="drive">
+            <option>The deepest. In order to bake an apple pie, one must first invent the universe.</option>
+            <option>Deep. Sort of really deep. </option>
+            <option>Let's make it quick, and I will pick up other skills when I need them.</option>
+          </select>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-md-12">
+          <label for="big"> So,you want to work for the big guys?</label>
+          <select class="form-control" id="big">
+            <option>Pass the Mocrosoft,get me into the back-end. I'm ready to get paid.</option>
+            <option>Yes, big, but only tech. I'm too good for the consumer field.</option>
+            <option>I'm all about that front-end interaction. </option>
+          </select>
+        </div>
+      </div>
+      <div id="submit">
+        <input type="submit" class="submit-button">
+      </div>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+<div id="story">
+  <h1>We know what you should study!</h1>
+  <p>Yes,<span class="name"></span>!  You mentioned that your education level is <span class="education"></span> and your dream is to <span class="dream"></span>. It is obvious, <span class="name"></span>, that you should study <span class="responce"></span>. Look for more information in your mailbox at <span class="email"></span> within a few days.
+  </p>
+</div>
+</div>
+</div>
+</body>
+</html>
