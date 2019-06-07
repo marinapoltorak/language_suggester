@@ -31,6 +31,7 @@ img.card-img-top.ruby {
 body{
   background-color: #988074;
   align-items: center;
+  padding: 50px;
 }
 
 #name_blanks {
@@ -43,4 +44,11 @@ body{
   font-size: 20px;
   font-family: monospace;
   color: #77161e;
+}
+
+.well {
+  background-color: #d0873a;
+  padding: 50px;
+  border-radius: 75%;
+  color: #1c1414;
 }
