@@ -26,6 +26,8 @@ img.card-img-top.ruby {
 .topbox {
   background-color: #d0873a;
   padding: 20px;
+  margin: 20px;
+  box-shadow: 10px 10px;
 }
 
 body{
@@ -49,12 +51,23 @@ body{
 .jumbotron {
   background-color: #d0873a;
   padding: 50px;
+  margin-top: 100px;
   color: #1c1414;
   border-radius: 50%;
   display:none;
+  box-shadow: 10px 10px;
 }
 
 #response {
   display:none;
   padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+#submit {
+  box-shadow: 10px 10px;
+  margin: 50px;
+  padding: 20px;
+  border-radius: 50%;
 }
