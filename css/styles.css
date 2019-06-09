@@ -48,12 +48,13 @@ body{
 
 .jumbotron {
   background-color: #d0873a;
-  padding: 20px;
-  padding: 20px;
+  padding: 50px;
   color: #1c1414;
+  border-radius: 50%;
   display:none;
 }
 
 #response {
   display:none;
+  padding: 50px;
 }
