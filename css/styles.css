@@ -24,12 +24,13 @@ img.card-img-top.ruby {
 }
 
 .topbox {
-  /* background-image: url("programming.jpg"); */
-  background-color: #d0873a;
+  background-image: url("../img/programming.jpg");
+  color: white;
   padding: 20px;
   margin: 20px;
-  box-shadow: 10px 10px;
-  border-radius: 35%;
+  border: 5px solid white;
+  /* box-shadow: 10px 10px; */
+  border-radius: 36%;
 }
 
 body{
